@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34931.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToSqlApp", "XmlToSqlApp\XmlToSqlApp.csproj", "{158B5F31-1672-484E-B45C-8961CA132CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToSqlApp.Tests", "XmlToSqlApp.Tests\XmlToSqlApp.Tests.csproj", "{A0CB13B5-1F89-47AC-8D24-ABD1296C6800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{158B5F31-1672-484E-B45C-8961CA132CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158B5F31-1672-484E-B45C-8961CA132CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158B5F31-1672-484E-B45C-8961CA132CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158B5F31-1672-484E-B45C-8961CA132CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CB13B5-1F89-47AC-8D24-ABD1296C6800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CB13B5-1F89-47AC-8D24-ABD1296C6800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CB13B5-1F89-47AC-8D24-ABD1296C6800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CB13B5-1F89-47AC-8D24-ABD1296C6800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCB4E928-8436-4AB0-9FF4-D4801E5BF41E}
+	EndGlobalSection
+EndGlobal

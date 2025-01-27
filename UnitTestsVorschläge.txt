@@ -1,0 +1,67 @@
+Allgemein
+
+1. Test für RestoreFiles – Erfolgreiche Wiederherstellung von Dateien
+
+Zweck: Testet, ob die Methode ProcessRestoreFiles für jedes Dateityp-Verzeichnis (_helpBackupPath, _frmBackupPath, _minfBackupPath, _mvarBackupPath) aufgerufen wird und ob die Dateien erfolgreich wiederhergestellt werden, wenn die Dateioperationen erfolgreich sind.
+
+2. Test für RestoreFiles – Kein Backup vorhanden
+
+Zweck: Überprüft, ob die Methode ProcessRestoreFiles korrekt mit einer Meldung reagiert, wenn im Backup-Verzeichnis keine Dateien vorhanden sind.
+
+3. Test für ProcessFiles – Erfolgreiche Verarbeitung von Dateien
+
+Zweck: Überprüft, ob die Methode ProcessDirectoryFiles für alle Pfade in filePaths aufgerufen wird, die Dateien in den angegebenen Verzeichnissen erfolgreich verarbeitet und verschiebt.
+
+4. Test für ProcessFiles – Fehler beim Verarbeiten von Dateien
+
+Zweck: Testet, ob die Methode ProcessDirectoryFiles bei einem Fehler während der Dateioperationen (z.B. Verarbeitungsfehler oder Datenbankfehler) eine entsprechende Fehlermeldung ausgibt.
+
+5. Test für ProcessRestoreFiles – Erfolgreiches Verschieben der Dateien
+
+Zweck: Überprüft, ob die Methode CheckAndMoveFiles aus der FileHelper-Klasse ordnungsgemäß funktioniert, wenn Dateien im Backup-Verzeichnis vorhanden sind, und ob sie die Datenbank korrekt leert, wenn das Verschieben erfolgreich war.
+
+6. Test für ProcessRestoreFiles – Fehler beim Verschieben der Dateien
+
+Zweck: Überprüft, ob eine Fehlermeldung ausgegeben wird, wenn die Methode CheckAndMoveFiles in der FileHelper-Klasse fehlschlägt (z.B. beim Verschieben der Dateien).
+
+7. Test für ProcessRestoreFiles – Ausnahmebehandlung
+
+Zweck: Überprüft, ob bei einem Fehler innerhalb des try-catch-Blocks (z.B. Fehler beim Zugriff auf Dateien oder Datenbankoperationen) die Ausnahme korrekt abgefangen und eine entsprechende Fehlermeldung ausgegeben wird.
+
+8. Test für ProcessDirectoryFiles – Verarbeitung von Dateien mit leerem Verzeichnis
+
+Zweck: Testet, ob die Methode korrekt reagiert, wenn das angegebene Verzeichnis keine Dateien enthält und eine entsprechende Nachricht wie „No files to process“ ausgegeben wird.
+
+9. Test für ProcessDirectoryFiles – Verarbeitungsfehler
+
+Zweck: Testet, ob bei einem Fehler im XmlProcessor oder SqlRepository eine Fehlermeldung ausgegeben wird.
+
+10. Test für GetFilePathIdentifier – Korrekte Identifikation des Dateipfades
+
+Zweck: Überprüft, ob die Methode GetFilePathIdentifier den richtigen Dateipfad-Identifikator für jedes Verzeichnis zurückgibt.
+
+Konsolen Interface 
+
+11. Test für Fall 1: Restore files
+
+Zweck: Überprüft, ob FileProcessingHandler.RestoreFiles() aufgerufen wird, wenn Fall „1“ ausgewählt wird.
+
+12. Test für Fall 2: Process files
+
+Zweck: Überprüft, ob FileProcessingHandler.ProcessFiles() aufgerufen wird, wenn Fall „2“ ausgewählt wird.
+
+13. Test für Fall 3: Exit
+
+Zweck: Überprüft, ob die Anwendung beendet wird, wenn Fall „3“ ausgewählt und anschließend „y“ für die Bestätigung eingegeben wird.
+
+14. Test für ungültige Eingabe
+
+Zweck: Überprüft, ob die Anwendung eine Fehlermeldung ausgibt und das Menü erneut anzeigt, wenn eine ungültige Eingabe erfolgt.
+
+15. Test für Exit-Bestätigung
+
+Zweck: Testet, ob die Anwendung die Bestätigung zum Beenden korrekt abfragt und das Programm bei „y“ beendet wird.
+
+16. Test für Rückkehr zum Menü bei Verweigerung des Exit
+
+Zweck: Überprüft, ob das Menü erneut angezeigt wird, wenn bei der Exit-Anfrage „n“ eingegeben wird.

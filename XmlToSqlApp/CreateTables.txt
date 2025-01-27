@@ -1,0 +1,57 @@
+﻿CREATE TABLE [dbo].[tms_mlc_help] (
+    [mhlp_id]       INT            NULL,
+    [mhlp_app_id]   INT            NULL,
+    [mhlp_ref_id]   INT            NULL,
+    [mhlp_language] INT            NULL,
+    [mhlp_title]    CHAR (150)     NULL,
+    [mhlp_text]     NVARCHAR (MAX) NULL
+);
+
+CREATE TABLE [dbo].[tms_mlc_info] (
+    [minf_id]        INT           NULL,
+    [minf_caption]   CHAR(150)     NULL,
+    [minf_type]      INT           NULL,
+    [minf_ref_id]    INT           NULL,
+    [minf_language]  INT           NULL,
+    [minf_text]      CHAR(150)     NULL
+);
+
+CREATE TABLE [dbo].[tms_mlc_label] (
+    [mlbl_id]       INT            NULL,
+    [mlbl_app_id]   INT            NULL,
+    [mlbl_ref_id]   INT            NULL,
+    [mlbl_language] INT            NULL,
+    [mlbl_label]    CHAR (150)     NULL,
+    [mlbl_tooltip]  NVARCHAR (MAX) NULL
+);
+
+CREATE TABLE [dbo].[tms_mlc_various] (
+    [mvar_id]            INT        NULL,
+    [mvar_app_id]        INT        NULL,
+    [mvar_ref_id]        INT        NULL,
+    [mvar_language]      INT        NULL,
+    [mvar_type]          INT        NULL,
+    [mvar_ongoing]       INT        NULL,
+    [mvar_ongoingoffset] INT        NULL,
+    [mvar_text]          CHAR (150) NULL,
+    [mvar_textoffset]    INT        NULL,
+    [mvar_handling]      INT        NULL
+);
+
+CREATE TABLE [dbo].[tms_mlc_various] (
+    [mvar_id]            INT        NULL,
+    [mvar_app_id]        INT        NULL,
+    [mvar_ref_id]        INT        NULL,
+    [mvar_language]      INT        NULL,
+    [mvar_type]          INT        NULL,
+    [mvar_ongoing]       INT        NULL,
+    [mvar_ongoingoffset] INT        NULL,
+    [mvar_text]          CHAR (150) NULL,
+    [mvar_textoffset]    INT        NULL,
+    [mvar_handling]      INT        NULL
+);
+
+
+
+
+
